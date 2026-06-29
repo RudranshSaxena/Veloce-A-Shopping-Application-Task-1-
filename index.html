@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veloce Store - Explore premium products and enjoy seamless shopping.">
+  <title>Veloce - Premium Shopping Experience</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-content">
+        <a href="#/" class="logo">
+          <span class="logo-accent">V</span>eloce
+        </a>
+        
+        <!-- Search bar component -->
+        <div class="search-wrapper" id="nav-search-container">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="global-search" placeholder="Search premium products..." autocomplete="off">
+        </div>
+
+        <div class="nav-actions">
+          <a href="#/" class="nav-link" id="nav-home">Home</a>
+          <a href="#/cart" class="cart-btn" id="nav-cart-btn">
+            <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-badge" id="cart-badge-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="app-root">
+      <!-- Injected by JS -->
+    </main>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Veloce Store. Built with modern web standards.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
